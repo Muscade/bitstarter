@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
-    var outsput = fs.readFileSync(filename, 'utf-8');
+    var output = fs.readFileSync(filename, 'utf-8');
     response.send(output);
 });
 
